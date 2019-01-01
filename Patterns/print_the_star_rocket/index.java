@@ -1,6 +1,6 @@
 /**
   @author : JsCodeLover
-  Print the Rocket using Stars.
+  Print the Rocket using Stars. (n = 6)
     *
     * *
     * * *

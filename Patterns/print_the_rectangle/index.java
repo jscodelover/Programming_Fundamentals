@@ -1,6 +1,6 @@
 /**
  @author: JsCodeLover
- Print the Rectangle :
+ Print the Rectangle : (n = 5)
     555555555
     544444445
     543333345

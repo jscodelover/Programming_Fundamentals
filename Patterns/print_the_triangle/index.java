@@ -1,6 +1,6 @@
 /**
  * @author : JsCodeLover
- * Print this pattern:
+ * Print this pattern: (n = 3)
  *      1
  *    2 3 2
  *  3 4 5 4 3
