@@ -9,14 +9,15 @@
  */
 
 import java.util.*;
-class Tests
+class SwapPattern
 {
 	public static void main(String ar[])
 	{
+		SwapPattern pattern = new SwapPattern();
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the no of row (odd) : ");
 		int num=sc.nextInt();
-		int startValue, num_half, Value;
+		int num_half, Value;
 		if(num%2==0)
 			num_half=num/2;
 		else
@@ -24,9 +25,7 @@ class Tests
 		Value=0;
 		for(int i=1; i<=num_half; i++)
 		{
-			startValue=(Value*num)+1;
-			for(int j=startValue; j<startValue+num; j++)
-				System.out.print(j+" ");
+			pattern.print(num, Value);
 			Value+=2;
 			System.out.println();
 		}
@@ -36,11 +35,14 @@ class Tests
 			Value=Value-3;
 		for(int i=num_half+1; i<=num; i++)
 		{
-			startValue=(Value*num)+1;
-			for(int j=startValue; j<startValue+num; j++)
-				System.out.print(j+" ");
+			pattern.print(num, Value);
 			Value-=2;
 			System.out.println();
 		} 
+	}
+	void print(int num, int Value){
+		int startValue=(Value*num)+1;
+		for(int j=startValue; j<startValue+num; j++)
+			System.out.print(j+" ");
 	}
 }
