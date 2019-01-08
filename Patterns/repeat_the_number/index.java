@@ -1,5 +1,6 @@
 /**
- @author: Repeat the Number. (n=4)
+ @author: JsCodeLover
+ Repeat the Number. (n=4)
     1
     23
     4567
