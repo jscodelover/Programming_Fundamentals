@@ -6,6 +6,7 @@
     21 22 23 24 25
     16 17 18 19 20
     6 7 8 9 10
+ Cond : n is the number of Rows.
  */
 
 import java.util.*;

@@ -9,10 +9,8 @@
   cond: n is number of odd Rows   
  */
 
-Print Hollo Daimond 
-
 import java.util.*;
-class Tests
+class Diamond
 {
 	public static void main(String ar[])
 	{

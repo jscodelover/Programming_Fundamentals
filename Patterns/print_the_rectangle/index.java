@@ -10,6 +10,7 @@
     543333345
     543222345
     555555555
+ Cond: n is the upto what number rectangle is created.	
  */
 
  import java.util.*;

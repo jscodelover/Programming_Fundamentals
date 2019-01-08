@@ -8,6 +8,7 @@
     **   **
     *** ***
     *******
+ Cond: n is the number of Rows.
  */
 
 import java.util.*;

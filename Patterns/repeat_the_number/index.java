@@ -5,6 +5,7 @@
     23
     4567
     891234567891234
+ Cond: n is number of odd Rows.   
  */
 
 import java.util.*;

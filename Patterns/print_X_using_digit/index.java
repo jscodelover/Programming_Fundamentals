@@ -1,6 +1,6 @@
 /**
  @author: JsCodeLover
- Print X using digits. (n=)
+ Print X using digits. (n = 4)
   1     1
    2   2 
     3 3
@@ -8,6 +8,7 @@
     3 3
    2   2
   1     1
+  Cond: n is upto what number X is to be created.
  */
 
 import java.util.*;
