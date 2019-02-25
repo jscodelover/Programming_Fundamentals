@@ -6,44 +6,41 @@
     21 22 23 24 25
     16 17 18 19 20
     6 7 8 9 10
- Cond : n is the number of Rows.
+  n is the number of Rows.
+  Cond: n should a odd number
  */
 
 import java.util.*;
-class SwapPattern
+class Main
 {
 	public static void main(String ar[])
 	{
-		SwapPattern pattern = new SwapPattern();
+    Main swap = new Main();
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the no of row (odd) : ");
 		int num=sc.nextInt();
-		int num_half, Value;
+		int startValue,num_half,Value;
 		if(num%2==0)
 			num_half=num/2;
 		else
 			num_half=(num/2)+1;
 		Value=0;
-		for(int i=1; i<=num_half; i++)
-		{
-			pattern.print(num, Value);
-			Value+=2;
-			System.out.println();
-		}
+        Value =  swap.print(1, num_half, Value, num, 2);
 		if(num%2==0)
 			Value=Value-1;
 		else
 			Value=Value-3;
-		for(int i=num_half+1; i<=num; i++)
-		{
-			pattern.print(num, Value);
-			Value-=2;
-			System.out.println();
-		} 
+        Value =  swap.print(num_half+1, num, Value, num, -2);
 	}
-	void print(int num, int Value){
-		int startValue=(Value*num)+1;
-		for(int j=startValue; j<startValue+num; j++)
-			System.out.print(j+" ");
-	}
+    public int print(int start, int end, int Value, int num, int next){
+		for(int i=start;i<=end;i++)
+			{
+				int startValue=(Value*num)+1;
+				for(int j=startValue;j<startValue+num;j++)
+					System.out.print(j+" ");
+				Value+=next;
+				System.out.println();
+			}
+		return Value;
+  }
 }
