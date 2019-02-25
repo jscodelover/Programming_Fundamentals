@@ -1,15 +1,31 @@
 /**
  @author: JsCodeLover
- Repeat the Number. (n=4)
-    1
-    23
-    4567
-    891234567891234
- Cond: n is number of odd Rows.   
+ Print the Repeating Number 
+ case 1 : (n=2)
+  1
+  23
+ case 2: (n=3)
+  1
+  23
+  4567
+ case 3: (n=4)
+  1
+  23
+  4567
+  89123456
+
+  n is the number of rows.
+  Cond: (i) rows increase in the power of 2 
+   eg -
+     1    => (2)^0 => 1 number 
+     23   => (2)^1 => 2 number
+     4567 => (2)^2 => 4 number
+  (ii) Number in row can be from 1 to 9, after number increase to 9 again repeat from 1.
+
  */
 
 import java.util.*;
-class Tests
+class Main
 {
 	public static void main(String ar[])
 	{
@@ -31,5 +47,3 @@ class Tests
 		}	
 	}
 }
-
- 
